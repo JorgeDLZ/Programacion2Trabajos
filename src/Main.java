@@ -10,24 +10,24 @@ public class Main {
         int numAleatorio = aleatorio.nextInt(max - min + 1) + min;
         int intentos = 3;
 
-        System.out.println("Adivina el número entre " + min + " y " + max + " en " + intentos + " intentos.");
+        System.out.println("Adivina el numero entre " + min + " y " + max + " en " + intentos + " intentos.");
 
         for (int i = 1; i <= intentos; i++) {
             System.out.print("Intento " + i + ": ");
             int user = teclado.nextInt();
 
             if (user == numAleatorio) {
-                System.out.println("¡Felicidades! Has adivinado el número.");
+                System.out.println("Has adivinado el numero.");
                 break;
 
             } else {
                 if (user < numAleatorio) {
-                    System.out.println("El número es mayor.");
+                    System.out.println("El numero es mayor.");
                 } else {
-                    System.out.println("El número es menor.");
+                    System.out.println("El numero es menor.");
                 }
                 if (i == intentos) {
-                    System.out.println("Perdiste, el número era: " + numAleatorio);
+                    System.out.println("Perdiste, el numero era: " + numAleatorio);
                 }
             }
         }
